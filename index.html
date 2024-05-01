@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <h1>Lótus Café</h1>
+                <button type="button" class="navbar-toggler custom-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end animation mt-3" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="main-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img src="imgs/man-2425121_1280.jpg" alt="Homem e mulher sentados tomando camfé">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="imgs/coffee-1276778_1280.jpg" alt="Xicara de café">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="imgs/girl-865304_1280.jpg" alt="Mulher tomando café ao nascer do sol">
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#main-carousel" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Sobre a loja</h2>
+            <div class="d-flex">
+                    <img src="imgs/coffeeshop.jpg" alt="Ambiente aberto de uma cafeteria">
+                    <div id="text-about">
+                        <p>
+                            Bem-vindo ao Lótus Café Online, sua porta de entrada para uma jornada de sabores e aromas incomparáveis. Descubra nossa seleção cuidadosamente escolhida de grãos premium, torrados e moídos sob medida para sua xícara perfeita. Explore o mundo do café conosco e desperte seus sentidos no Lótus Café Online.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-pills">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active botao" type="button">Cafés</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link botao" type="button">Filtros</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link botao" type="button">Moedores</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/cafe1.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Café Lótus</h4>
+                                            <p class="card-text">
+                                                Garante equilíbrio de doçura e acidez desejado pelos amantes de café.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/cafe1.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Café Seis Existências</h4>
+                                            <p class="card-text">
+                                                Sua doçura é uma viagem a sensações ilimitadas de paladar
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/cafe1.png" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Café Khan</h4>
+                                            <p class="card-text">
+                                                Poderosa inensidade esférica de acidez que o envolve em todos os pontos.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/harioV60.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Hario V60</h4>
+                                            <p class="card-text">
+                                                Oferece design que favorece uma extração mais harmônica e direta.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/french-press-3598854_1280.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">French Press</h4>
+                                            <p class="card-text">
+                                                A água se mistura com o café fazendo um processo de infusão.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/aeropress.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Aeropress</h4>
+                                            <p class="card-text">
+                                                Esse método combina o método do café coado com a pressão.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/moedor.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Moedor de Samsara</h4>
+                                            <p class="card-text">
+                                                Moagem fácil e precisa de forma manual.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/moedor.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Moedor de Samsara</h4>
+                                            <p class="card-text">
+                                                Moagem fácil e precisa de forma manual.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mt-2 pt-2">
+                                    <article class="card">
+                                        <img src="imgs/moedor.jpg" alt="">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Moedor de Samsara</h4>
+                                            <p class="card-text">
+                                                Moagem fácil e precisa de forma manual.
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Comprar</a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

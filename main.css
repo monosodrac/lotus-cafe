@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+}
+
+/* header */
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+section {
+    color: black;
+    background-color: #fff;
+    padding-top: 6em;
+}
+
+#inicio {
+    background-color: #822e06;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    z-index: 999;
+}
+
+
+.animation {
+    transition: height 1s ease;
+}
+
+
+/* carousel */
+.carousel-item {
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-item img {
+    max-height: 480px;
+    width: 100%;
+    height: 58rem;
+    object-fit: cover;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 2.6s;
+}
+
+
+#inicio img {
+    width: 60%;
+}
+
+#text-about {
+    font-size: 2em;
+}
+
+section {
+    text-align: center;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+header .nav-pills .nav-link {
+    background-color: #822e06;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+header .nav-pills .nav-link.active,
+header .nav-pills .nav-link:hover {
+    background-color: black;
+    color: #822e06;
+}
+
+#produtos .nav-pills .nav-link {
+    background-color: black;
+    color: #822e06;
+    transition: background-color 0.3s ease;
+}
+
+#produtos .nav-pills .nav-link.active,
+#produtos .nav-pills .nav-link:hover {
+    background-color: #822e06;
+    color: black;
+}
+
+.card {
+    margin-bottom: 2em;
+}
+
+.tab-content #aba2 img {
+    height: 32em;
+}
+
+@media screen and (max-width: 1023px) {
+    #inicio > div {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    #inicio img {
+        width: 100%;
+    }
+
+    #text-about {
+        font-size: 1em;
+    }
+}
