@@ -1,6 +1,10 @@
-body {
-    background-color: black;
+html {
+    scroll-behavior: smooth;
 }
+
+/* body {
+    background-color: black;
+} */
 
 /* header */
 .navbar-nav .nav-link.active {
@@ -17,8 +21,8 @@ section {
     padding-top: 6em;
 }
 
-#inicio {
-    background-color: #822e06;
+#produtos {
+    background-color: #000;
 }
 
 header {
